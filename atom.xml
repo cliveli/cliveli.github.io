@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://clive.li/"/>
-  <updated>2020-04-05T09:52:51.393Z</updated>
+  <updated>2020-04-05T11:00:38.703Z</updated>
   <id>https://clive.li/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PreSchool 十以内加减题目生成</title>
+    <link href="https://clive.li/2020/04/05/2020-04-05-Math_Quiz/"/>
+    <id>https://clive.li/2020/04/05/2020-04-05-Math_Quiz/</id>
+    <published>2020-04-05T08:00:00.000Z</published>
+    <updated>2020-04-05T11:00:38.703Z</updated>
+    
+    <content type="html"><![CDATA[<p>隔离在家， 家里神兽要翻天了。 那就干脆给他找点事情做吧。</p><p><a href="https://clive.li/math/">十以内加减法</a></p><p>实际上不止是十以内。</p><p>第一个选择生成多少页。最多10页。</p><p>第二个选择算数范围。</p><p>第三个选择是不是生成前面带填空的题目，这个神兽做了两张卷子才搞清楚是怎么回事。</p><p>选择好了后，点最后那个打印。可以直接打印出来，也可以保存成pdf。</p><p>A4的排版。已经尽力了。不同的打印机，不同的设备，OS有可能有少许不同。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;隔离在家， 家里神兽要翻天了。 那就干脆给他找点事情做吧。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://clive.li/math/&quot;&gt;十以内加减法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;实际上不止是十以内。&lt;/p&gt;
+&lt;p&gt;第一个选择生成多少页。最多10页。&lt;/p&gt;
+&lt;p&gt;第二个选择算
+      
+    
+    </summary>
+    
+    
+      <category term="Personal" scheme="https://clive.li/tags/Personal/"/>
+    
+  </entry>
   
   <entry>
     <title>Migrate To Hexo</title>
