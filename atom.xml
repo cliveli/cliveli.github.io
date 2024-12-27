@@ -3,10 +3,10 @@
   <title>Clive.LI</title>
   
   <subtitle>TL;DR</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="https://clive.li/atom.xml" rel="self"/>
   
   <link href="https://clive.li/"/>
-  <updated>2020-04-05T11:00:38.703Z</updated>
+  <updated>2024-12-27T12:11:33.736Z</updated>
   <id>https://clive.li/</id>
   
   <author>
@@ -14,32 +14,31 @@
     
   </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>PreSchool 十以内加减题目生成</title>
     <link href="https://clive.li/2020/04/05/2020-04-05-Math_Quiz/"/>
     <id>https://clive.li/2020/04/05/2020-04-05-Math_Quiz/</id>
     <published>2020-04-05T08:00:00.000Z</published>
-    <updated>2020-04-05T11:00:38.703Z</updated>
+    <updated>2024-12-27T12:11:33.736Z</updated>
     
     <content type="html"><![CDATA[<p>隔离在家， 家里神兽要翻天了。 那就干脆给他找点事情做吧。</p><p><a href="https://clive.li/math/">十以内加减法</a></p><p>实际上不止是十以内。</p><p>第一个选择生成多少页。最多10页。</p><p>第二个选择算数范围。</p><p>第三个选择是不是生成前面带填空的题目，这个神兽做了两张卷子才搞清楚是怎么回事。</p><p>选择好了后，点最后那个打印。可以直接打印出来，也可以保存成pdf。</p><p>A4的排版。已经尽力了。不同的打印机，不同的设备，OS有可能有少许不同。</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;隔离在家， 家里神兽要翻天了。 那就干脆给他找点事情做吧。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;隔离在家， 家里神兽要翻天了。 那就干脆给他找点事情做吧。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://clive.li/math/&quot;&gt;十以内加减法&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;实际上不止是十以内。&lt;/p&gt;
 &lt;p&gt;第一个选择生成多少页。最多10页。&lt;/p&gt;
-&lt;p&gt;第二个选择算
+&lt;p&gt;第二个选择算</summary>
       
     
-    </summary>
     
     
-      <category term="Personal" scheme="https://clive.li/tags/Personal/"/>
+    
+    <category term="Personal" scheme="https://clive.li/tags/Personal/"/>
     
   </entry>
   
@@ -48,26 +47,25 @@
     <link href="https://clive.li/2017/10/06/MigrateToHexo/"/>
     <id>https://clive.li/2017/10/06/MigrateToHexo/</id>
     <published>2017-10-06T05:09:33.000Z</published>
-    <updated>2020-04-05T09:52:51.393Z</updated>
+    <updated>2024-12-27T12:11:33.736Z</updated>
     
     <content type="html"><![CDATA[<ul><li>切换到Hexo+Next</li><li>clive.li 部署在github， 使用cloudflare提供ssl</li><li>cliveli.org 部署在firebase，自带ssl</li></ul>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;ul&gt;
+    <summary type="html">&lt;ul&gt;
 &lt;li&gt;切换到Hexo+Next&lt;/li&gt;
 &lt;li&gt;clive.li 部署在github， 使用cloudflare提供ssl&lt;/li&gt;
 &lt;li&gt;cliveli.org 部署在firebase，自带ssl&lt;/li&gt;
 &lt;/ul&gt;
-
+</summary>
       
     
-    </summary>
     
     
-      <category term="Personal" scheme="https://clive.li/tags/Personal/"/>
+    
+    <category term="Personal" scheme="https://clive.li/tags/Personal/"/>
     
   </entry>
   
@@ -76,26 +74,25 @@
     <link href="https://clive.li/2017/07/15/2017-07-15-Install_R_On_MacOS/"/>
     <id>https://clive.li/2017/07/15/2017-07-15-Install_R_On_MacOS/</id>
     <published>2017-07-14T14:00:00.000Z</published>
-    <updated>2020-04-05T09:52:51.393Z</updated>
+    <updated>2024-12-27T12:11:33.735Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装xquartzx11图形依赖，中间会要求输入密码</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install xquartz</span><br></pre></td></tr></table></figure><p>r是在science 这个repo里</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew tap homebrew/science</span><br></pre></td></tr></table></figure><a id="more"></a><p>接下来安装r</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --with-x11 r</span><br></pre></td></tr></table></figure><p>最后可以安装rstudio，默认安装到用户目录下的~/Applications</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install rstudio</span><br></pre></td></tr></table></figure><p>如果想安装到整个系统的/Applications下的话，使用—appdir参数</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install --appdir=/Applications rstudio</span><br></pre></td></tr></table></figure><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p> 直接到LaunchPad里找Rstudio，点击即可</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装xquartzx11图形依赖，中间会要求输入密码</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install xquartz</span><br></pre></td></tr></table></figure><p>r是在science 这个repo里</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew tap homebrew/science</span><br></pre></td></tr></table></figure><span id="more"></span><p>接下来安装r</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install --with-x11 r</span><br></pre></td></tr></table></figure><p>最后可以安装rstudio，默认安装到用户目录下的~&#x2F;Applications</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install rstudio</span><br></pre></td></tr></table></figure><p>如果想安装到整个系统的&#x2F;Applications下的话，使用—appdir参数</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install --appdir=/Applications rstudio</span><br></pre></td></tr></table></figure><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p> 直接到LaunchPad里找Rstudio，点击即可</p>]]></content>
     
-    <summary type="html">
     
-      &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;安装xquartzx11图形依赖，中间会要求输入密码&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;安装xquartzx11图形依赖，中间会要求输入密码&lt;/p&gt;
 &lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew cask install xquartz&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;p&gt;r是在science 这个repo里&lt;/p&gt;
-&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew tap homebrew/science&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Tech" scheme="https://clive.li/categories/Tech/"/>
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew tap homebrew/science&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
-      <category term="MacOS" scheme="https://clive.li/tags/MacOS/"/>
     
-      <category term="R" scheme="https://clive.li/tags/R/"/>
+    <category term="Tech" scheme="https://clive.li/categories/Tech/"/>
+    
+    
+    <category term="MacOS" scheme="https://clive.li/tags/MacOS/"/>
+    
+    <category term="R" scheme="https://clive.li/tags/R/"/>
     
   </entry>
   
@@ -104,27 +101,26 @@
     <link href="https://clive.li/2017/05/02/2017-05-02-Deploy_docker_on_ESXi/"/>
     <id>https://clive.li/2017/05/02/2017-05-02-Deploy_docker_on_ESXi/</id>
     <published>2017-05-01T14:00:00.000Z</published>
-    <updated>2020-04-05T09:52:51.393Z</updated>
+    <updated>2024-12-27T12:11:33.735Z</updated>
     
-    <content type="html"><![CDATA[<p>简单介绍下怎么通过docker-machine以及它的<a href="https://docs.docker.com/machine/drivers/vsphere/" target="_blank" rel="noopener">vsphere driver</a>来直接在esxi上创建／管理／部署docker环境</p><h2 id="为什么要这样做？"><a href="#为什么要这样做？" class="headerlink" title="为什么要这样做？"></a>为什么要这样做？</h2><ol><li>通过docker-machine可以很方便的部署和管理在esxi上的docker containers</li><li>不想另外在esxi上再创建一个Linux instance来跑docker</li><li>Mac上没有esxi的客户端</li></ol><a id="more"></a><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>说白了其实很简单，docker-machine会通过vsphere驱动和esxi的API通讯（需要用到<a href="https://github.com/vmware/govmomi/tree/master/govc" target="_blank" rel="noopener">govc</a>），在esxi上直接创建一个虚拟机并且运行boot2docker的镜像。接下来就和Mac上的docker-machine是一码事了，只是Mac上的boot2docker是跑在virtual box里。这儿我们是把它运行在另外一台esxi上。</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>这儿跳过怎么安装esxi，docker-machine的步骤了，请自行查找。</p><h3 id="安装go和govc"><a href="#安装go和govc" class="headerlink" title="安装go和govc"></a>安装go和govc</h3><p>具体请查看 <a href="https://github.com/vmware/govmomi/tree/master/govc" target="_blank" rel="noopener">https://github.com/vmware/govmomi/tree/master/govc</a></p><h3 id="创建machine"><a href="#创建machine" class="headerlink" title="创建machine"></a>创建machine</h3><p>这儿需要esxi的ip，用户名，密码</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker-machine create -d vmwarevsphere --vmwarevsphere-username=&lt;&lt;vSphere USER&gt;&gt; \</span><br><span class="line">--vmwarevsphere-password=&lt;&lt;vSphere PASSWORD&gt;&gt; \</span><br><span class="line"> --vmwarevsphere-vcenter=&lt;&lt;ESXi management IP&gt;&gt; \</span><br><span class="line"> --vmwarevsphere-datacenter=ha-datacenter \</span><br><span class="line">  --vmwarevsphere-datastore=datastore1 \</span><br><span class="line">  --vmwarevsphere-boot2docker-url=https://releases.rancher.com/os/latest/rancheros.iso \</span><br><span class="line">   --vmwarevsphere-network="VM NETWORK" esxi</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>创建好machine后，通过docker-machine env，切换到esxi这个machine下，就和普通的machine没有任何区别了</p><p><img src="/media/dockeresxi.jpg" alt></p><p><img src="/media/dockerimages.jpg" alt></p><p><img src="/media/dockerps.jpg" alt></p>]]></content>
+    <content type="html"><![CDATA[<p>简单介绍下怎么通过docker-machine以及它的<a href="https://docs.docker.com/machine/drivers/vsphere/">vsphere driver</a>来直接在esxi上创建／管理／部署docker环境</p><h2 id="为什么要这样做？"><a href="#为什么要这样做？" class="headerlink" title="为什么要这样做？"></a>为什么要这样做？</h2><ol><li>通过docker-machine可以很方便的部署和管理在esxi上的docker containers</li><li>不想另外在esxi上再创建一个Linux instance来跑docker</li><li>Mac上没有esxi的客户端</li></ol><span id="more"></span><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>说白了其实很简单，docker-machine会通过vsphere驱动和esxi的API通讯（需要用到<a href="https://github.com/vmware/govmomi/tree/master/govc">govc</a>），在esxi上直接创建一个虚拟机并且运行boot2docker的镜像。接下来就和Mac上的docker-machine是一码事了，只是Mac上的boot2docker是跑在virtual box里。这儿我们是把它运行在另外一台esxi上。</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>这儿跳过怎么安装esxi，docker-machine的步骤了，请自行查找。</p><h3 id="安装go和govc"><a href="#安装go和govc" class="headerlink" title="安装go和govc"></a>安装go和govc</h3><p>具体请查看 <a href="https://github.com/vmware/govmomi/tree/master/govc">https://github.com/vmware/govmomi/tree/master/govc</a></p><h3 id="创建machine"><a href="#创建machine" class="headerlink" title="创建machine"></a>创建machine</h3><p>这儿需要esxi的ip，用户名，密码</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker-machine create -d vmwarevsphere --vmwarevsphere-username=&lt;&lt;vSphere USER&gt;&gt; \</span><br><span class="line">--vmwarevsphere-password=&lt;&lt;vSphere PASSWORD&gt;&gt; \</span><br><span class="line"> --vmwarevsphere-vcenter=&lt;&lt;ESXi management IP&gt;&gt; \</span><br><span class="line"> --vmwarevsphere-datacenter=ha-datacenter \</span><br><span class="line">  --vmwarevsphere-datastore=datastore1 \</span><br><span class="line">  --vmwarevsphere-boot2docker-url=https://releases.rancher.com/os/latest/rancheros.iso \</span><br><span class="line">   --vmwarevsphere-network=&quot;VM NETWORK&quot; esxi</span><br></pre></td></tr></table></figure><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>创建好machine后，通过docker-machine env，切换到esxi这个machine下，就和普通的machine没有任何区别了</p><p><img src="/media/dockeresxi.jpg"></p><p><img src="/media/dockerimages.jpg"></p><p><img src="/media/dockerps.jpg"></p>]]></content>
     
-    <summary type="html">
     
-      &lt;p&gt;简单介绍下怎么通过docker-machine以及它的&lt;a href=&quot;https://docs.docker.com/machine/drivers/vsphere/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;vsphere driver&lt;/a&gt;来直接在esxi上创建／管理／部署docker环境&lt;/p&gt;
+    <summary type="html">&lt;p&gt;简单介绍下怎么通过docker-machine以及它的&lt;a href=&quot;https://docs.docker.com/machine/drivers/vsphere/&quot;&gt;vsphere driver&lt;/a&gt;来直接在esxi上创建／管理／部署docker环境&lt;/p&gt;
 &lt;h2 id=&quot;为什么要这样做？&quot;&gt;&lt;a href=&quot;#为什么要这样做？&quot; class=&quot;headerlink&quot; title=&quot;为什么要这样做？&quot;&gt;&lt;/a&gt;为什么要这样做？&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;通过docker-machine可以很方便的部署和管理在esxi上的docker containers&lt;/li&gt;
 &lt;li&gt;不想另外在esxi上再创建一个Linux instance来跑docker&lt;/li&gt;
 &lt;li&gt;Mac上没有esxi的客户端&lt;/li&gt;
-&lt;/ol&gt;
-    
-    </summary>
-    
-      <category term="Tech" scheme="https://clive.li/categories/Tech/"/>
+&lt;/ol&gt;</summary>
     
     
-      <category term="Docker" scheme="https://clive.li/tags/Docker/"/>
     
-      <category term="ESXi" scheme="https://clive.li/tags/ESXi/"/>
+    <category term="Tech" scheme="https://clive.li/categories/Tech/"/>
+    
+    
+    <category term="Docker" scheme="https://clive.li/tags/Docker/"/>
+    
+    <category term="ESXi" scheme="https://clive.li/tags/ESXi/"/>
     
   </entry>
   
@@ -133,25 +129,24 @@
     <link href="https://clive.li/2016/12/09/2016-12-09-Add_Sublime_text_to_click_menu/"/>
     <id>https://clive.li/2016/12/09/2016-12-09-Add_Sublime_text_to_click_menu/</id>
     <published>2016-12-08T13:00:00.000Z</published>
-    <updated>2020-04-05T09:52:51.393Z</updated>
+    <updated>2024-12-27T12:11:33.735Z</updated>
     
-    <content type="html"><![CDATA[<p>Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator.</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">SET</span> st3Path=C:\Program Files\Sublime Text <span class="number">3</span>\sublime_text.exe</span><br><span class="line"> </span><br><span class="line"><span class="comment">rem add it for all file types</span></span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>"         /t REG_SZ /v "" /d "Open with Sublime Text <span class="number">3</span>"   /f</span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>"         /t REG_EXPAND_SZ /v "Icon" /d "<span class="variable">%st3Path%</span>,<span class="number">0</span>" /f</span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>\command" /t REG_SZ /v "" /d "<span class="variable">%st3Path%</span> \"<span class="variable">%%1</span>\"" /f</span><br><span class="line"> </span><br><span class="line"><span class="comment">rem add it for folders</span></span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>"         /t REG_SZ /v "" /d "Open with Sublime Text <span class="number">3</span>"   /f</span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>"         /t REG_EXPAND_SZ /v "Icon" /d "<span class="variable">%st3Path%</span>,<span class="number">0</span>" /f</span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>\command" /t REG_SZ /v "" /d "<span class="variable">%st3Path%</span> \"<span class="variable">%%1</span>\"" /f</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator.</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">SET</span> st3Path=C:\Program Files\Sublime Text <span class="number">3</span>\sublime_text.exe</span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">rem add it for all file types</span></span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>&quot;         /t REG_SZ /v &quot;&quot; /d &quot;Open with Sublime Text <span class="number">3</span>&quot;   /f</span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>&quot;         /t REG_EXPAND_SZ /v &quot;Icon&quot; /d &quot;<span class="variable">%st3Path%</span>,<span class="number">0</span>&quot; /f</span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>\command&quot; /t REG_SZ /v &quot;&quot; /d &quot;<span class="variable">%st3Path%</span> \&quot;<span class="variable">%%1</span>\&quot;&quot; /f</span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">rem add it for folders</span></span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>&quot;         /t REG_SZ /v &quot;&quot; /d &quot;Open with Sublime Text <span class="number">3</span>&quot;   /f</span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>&quot;         /t REG_EXPAND_SZ /v &quot;Icon&quot; /d &quot;<span class="variable">%st3Path%</span>,<span class="number">0</span>&quot; /f</span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>\command&quot; /t REG_SZ /v &quot;&quot; /d &quot;<span class="variable">%st3Path%</span> \&quot;<span class="variable">%%1</span>\&quot;&quot; /f</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator.&lt;/p
+    <summary type="html">&lt;p&gt;Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator.&lt;/p</summary>
       
     
-    </summary>
-    
-      <category term="Tech" scheme="https://clive.li/categories/Tech/"/>
     
     
-      <category term="Windows" scheme="https://clive.li/tags/Windows/"/>
+    <category term="Tech" scheme="https://clive.li/categories/Tech/"/>
     
-      <category term="Sublime" scheme="https://clive.li/tags/Sublime/"/>
+    
+    <category term="Windows" scheme="https://clive.li/tags/Windows/"/>
+    
+    <category term="Sublime" scheme="https://clive.li/tags/Sublime/"/>
     
   </entry>
   
@@ -160,20 +155,19 @@
     <link href="https://clive.li/2016/06/27/2016-06-27-change_javafx_webview_dropdown_style/"/>
     <id>https://clive.li/2016/06/27/2016-06-27-change_javafx_webview_dropdown_style/</id>
     <published>2016-06-26T14:00:00.000Z</published>
-    <updated>2020-04-05T09:52:51.392Z</updated>
+    <updated>2024-12-27T12:11:33.734Z</updated>
     
-    <content type="html"><![CDATA[<p>The HTML select dropdown list is rendered by web browser itself. There are other javascript/css implementations like select2, jquery chosen to have customized style dropdown list.</p><a id="more"></a><p>If you are running javafx webview and want to change dropdown list styling (E.g. Background color, text color), you should change your javafx application CSS for the menu:</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="selector-class">.context-menu</span> &#123;</span><br><span class="line"><span class="attribute">-fx-background-color</span>: <span class="number">#0a374d</span>;</span><br><span class="line"><span class="attribute">-fx-text-fill</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.menu-item</span> &#123;</span><br><span class="line"><span class="attribute">-fx-border-width</span>: <span class="number">2</span> <span class="number">10</span> <span class="number">2</span> <span class="number">10</span>;</span><br><span class="line"><span class="attribute">-fx-border-color</span>: transparent;</span><br><span class="line"><span class="attribute">-fx-text-fill</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.menu-item</span> <span class="selector-class">.label</span> &#123;</span><br><span class="line"><span class="attribute">-fx-text-fill</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.menu-item</span><span class="selector-pseudo">:focused</span> &#123;</span><br><span class="line"><span class="attribute">-fx-background-color</span>: <span class="number">#466c89</span>;</span><br><span class="line"><span class="attribute">-fx-text-fill</span>: white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;The HTML select dropdown list is rendered by web browser itself. There are other javascript/css implementations like select2, jquery chosen to have customized style dropdown list.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Tech" scheme="https://clive.li/categories/Tech/"/>
+    <content type="html"><![CDATA[<p>The HTML select dropdown list is rendered by web browser itself. There are other javascript&#x2F;css implementations like select2, jquery chosen to have customized style dropdown list.</p><span id="more"></span><p>If you are running javafx webview and want to change dropdown list styling (E.g. Background color, text color), you should change your javafx application CSS for the menu:</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="selector-class">.context-menu</span> &#123;</span><br><span class="line">-fx-<span class="attribute">background-color</span>: <span class="number">#0a374d</span>;</span><br><span class="line">-fx-<span class="selector-tag">text</span>-<span class="attribute">fill</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.menu-item</span> &#123;</span><br><span class="line">-fx-<span class="attribute">border-width</span>: <span class="number">2</span> <span class="number">10</span> <span class="number">2</span> <span class="number">10</span>;</span><br><span class="line">-fx-<span class="attribute">border-color</span>: transparent;</span><br><span class="line">-fx-<span class="selector-tag">text</span>-<span class="attribute">fill</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.menu-item</span> <span class="selector-class">.label</span> &#123;</span><br><span class="line">-fx-<span class="selector-tag">text</span>-<span class="attribute">fill</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.menu-item</span><span class="selector-pseudo">:focus</span>ed &#123;</span><br><span class="line">-fx-<span class="attribute">background-color</span>: <span class="number">#466c89</span>;</span><br><span class="line">-fx-<span class="selector-tag">text</span>-<span class="attribute">fill</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
     
     
-      <category term="JavaFx" scheme="https://clive.li/tags/JavaFx/"/>
+    <summary type="html">&lt;p&gt;The HTML select dropdown list is rendered by web browser itself. There are other javascript&amp;#x2F;css implementations like select2, jquery chosen to have customized style dropdown list.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Tech" scheme="https://clive.li/categories/Tech/"/>
+    
+    
+    <category term="JavaFx" scheme="https://clive.li/tags/JavaFx/"/>
     
   </entry>
   

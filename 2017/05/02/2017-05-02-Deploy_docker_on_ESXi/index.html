@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
+<meta name="generator" content="Hexo 7.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
@@ -19,24 +19,35 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"clive.li","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"clive.li","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
-
+<!-- Hotjar Tracking Code for https://cliveli.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2278629,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   <meta name="description" content="简单介绍下怎么通过docker-machine以及它的vsphere driver来直接在esxi上创建／管理／部署docker环境 为什么要这样做？ 通过docker-machine可以很方便的部署和管理在esxi上的docker containers 不想另外在esxi上再创建一个Linux instance来跑docker Mac上没有esxi的客户端">
-<meta name="keywords" content="Docker,ESXi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="通过docker-machine直接在esxi上部署和管理docker">
 <meta property="og:url" content="https://clive.li/2017/05/02/2017-05-02-Deploy_docker_on_ESXi/index.html">
 <meta property="og:site_name" content="Clive.LI">
 <meta property="og:description" content="简单介绍下怎么通过docker-machine以及它的vsphere driver来直接在esxi上创建／管理／部署docker环境 为什么要这样做？ 通过docker-machine可以很方便的部署和管理在esxi上的docker containers 不想另外在esxi上再创建一个Linux instance来跑docker Mac上没有esxi的客户端">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://clive.li/media/dockeresxi.jpg">
 <meta property="og:image" content="https://clive.li/media/dockerimages.jpg">
 <meta property="og:image" content="https://clive.li/media/dockerps.jpg">
-<meta property="og:updated_time" content="2020-04-05T09:52:51.393Z">
+<meta property="article:published_time" content="2017-05-01T14:00:00.000Z">
+<meta property="article:modified_time" content="2024-12-27T12:11:33.735Z">
+<meta property="article:author" content="Clive Li">
+<meta property="article:tag" content="Docker">
+<meta property="article:tag" content="ESXi">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="通过docker-machine直接在esxi上部署和管理docker">
-<meta name="twitter:description" content="简单介绍下怎么通过docker-machine以及它的vsphere driver来直接在esxi上创建／管理／部署docker环境 为什么要这样做？ 通过docker-machine可以很方便的部署和管理在esxi上的docker containers 不想另外在esxi上再创建一个Linux instance来跑docker Mac上没有esxi的客户端">
 <meta name="twitter:image" content="https://clive.li/media/dockeresxi.jpg">
 
 <link rel="canonical" href="https://clive.li/2017/05/02/2017-05-02-Deploy_docker_on_ESXi/">
@@ -83,10 +94,11 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="Clive.LI" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" data-hj-suppress>
+  <div class="container">
     <div class="headband"></div>
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -203,7 +215,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-05 19:52:51" itemprop="dateModified" datetime="2020-04-05T19:52:51+10:00">2020-04-05</time>
+                <time title="Modified: 2024-12-27 23:11:33" itemprop="dateModified" datetime="2024-12-27T23:11:33+11:00">2024-12-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -240,24 +252,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>简单介绍下怎么通过docker-machine以及它的<a href="https://docs.docker.com/machine/drivers/vsphere/" target="_blank" rel="noopener">vsphere driver</a>来直接在esxi上创建／管理／部署docker环境</p>
+        <p>简单介绍下怎么通过docker-machine以及它的<a href="https://docs.docker.com/machine/drivers/vsphere/">vsphere driver</a>来直接在esxi上创建／管理／部署docker环境</p>
 <h2 id="为什么要这样做？"><a href="#为什么要这样做？" class="headerlink" title="为什么要这样做？"></a>为什么要这样做？</h2><ol>
 <li>通过docker-machine可以很方便的部署和管理在esxi上的docker containers</li>
 <li>不想另外在esxi上再创建一个Linux instance来跑docker</li>
 <li>Mac上没有esxi的客户端</li>
 </ol>
-<a id="more"></a>
+<span id="more"></span>
 
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>说白了其实很简单，docker-machine会通过vsphere驱动和esxi的API通讯（需要用到<a href="https://github.com/vmware/govmomi/tree/master/govc" target="_blank" rel="noopener">govc</a>），在esxi上直接创建一个虚拟机并且运行boot2docker的镜像。接下来就和Mac上的docker-machine是一码事了，只是Mac上的boot2docker是跑在virtual box里。这儿我们是把它运行在另外一台esxi上。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>说白了其实很简单，docker-machine会通过vsphere驱动和esxi的API通讯（需要用到<a href="https://github.com/vmware/govmomi/tree/master/govc">govc</a>），在esxi上直接创建一个虚拟机并且运行boot2docker的镜像。接下来就和Mac上的docker-machine是一码事了，只是Mac上的boot2docker是跑在virtual box里。这儿我们是把它运行在另外一台esxi上。</p>
 <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>这儿跳过怎么安装esxi，docker-machine的步骤了，请自行查找。</p>
-<h3 id="安装go和govc"><a href="#安装go和govc" class="headerlink" title="安装go和govc"></a>安装go和govc</h3><p>具体请查看 <a href="https://github.com/vmware/govmomi/tree/master/govc" target="_blank" rel="noopener">https://github.com/vmware/govmomi/tree/master/govc</a></p>
+<h3 id="安装go和govc"><a href="#安装go和govc" class="headerlink" title="安装go和govc"></a>安装go和govc</h3><p>具体请查看 <a href="https://github.com/vmware/govmomi/tree/master/govc">https://github.com/vmware/govmomi/tree/master/govc</a></p>
 <h3 id="创建machine"><a href="#创建machine" class="headerlink" title="创建machine"></a>创建machine</h3><p>这儿需要esxi的ip，用户名，密码</p>
-<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker-machine create -d vmwarevsphere --vmwarevsphere-username=&lt;&lt;vSphere USER&gt;&gt; \</span><br><span class="line">--vmwarevsphere-password=&lt;&lt;vSphere PASSWORD&gt;&gt; \</span><br><span class="line"> --vmwarevsphere-vcenter=&lt;&lt;ESXi management IP&gt;&gt; \</span><br><span class="line"> --vmwarevsphere-datacenter=ha-datacenter \</span><br><span class="line">  --vmwarevsphere-datastore=datastore1 \</span><br><span class="line">  --vmwarevsphere-boot2docker-url=https://releases.rancher.com/os/latest/rancheros.iso \</span><br><span class="line">   --vmwarevsphere-network="VM NETWORK" esxi</span><br></pre></td></tr></table></figure>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker-machine create -d vmwarevsphere --vmwarevsphere-username=&lt;&lt;vSphere USER&gt;&gt; \</span><br><span class="line">--vmwarevsphere-password=&lt;&lt;vSphere PASSWORD&gt;&gt; \</span><br><span class="line"> --vmwarevsphere-vcenter=&lt;&lt;ESXi management IP&gt;&gt; \</span><br><span class="line"> --vmwarevsphere-datacenter=ha-datacenter \</span><br><span class="line">  --vmwarevsphere-datastore=datastore1 \</span><br><span class="line">  --vmwarevsphere-boot2docker-url=https://releases.rancher.com/os/latest/rancheros.iso \</span><br><span class="line">   --vmwarevsphere-network=&quot;VM NETWORK&quot; esxi</span><br></pre></td></tr></table></figure>
 
 <h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>创建好machine后，通过docker-machine env，切换到esxi这个machine下，就和普通的machine没有任何区别了</p>
-<p><img src="/media/dockeresxi.jpg" alt></p>
-<p><img src="/media/dockerimages.jpg" alt></p>
-<p><img src="/media/dockerps.jpg" alt></p>
+<p><img src="/media/dockeresxi.jpg"></p>
+<p><img src="/media/dockerimages.jpg"></p>
+<p><img src="/media/dockerps.jpg"></p>
 
     </div>
 
@@ -349,7 +361,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要这样做？"><span class="nav-number">1.</span> <span class="nav-text">为什么要这样做？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原理"><span class="nav-number">2.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#步骤"><span class="nav-number">3.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装go和govc"><span class="nav-number">3.1.</span> <span class="nav-text">安装go和govc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建machine"><span class="nav-number">3.2.</span> <span class="nav-text">创建machine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">3.3.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%BF%99%E6%A0%B7%E5%81%9A%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">为什么要这样做？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A4"><span class="nav-number">3.</span> <span class="nav-text">步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85go%E5%92%8Cgovc"><span class="nav-number">3.1.</span> <span class="nav-text">安装go和govc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BAmachine"><span class="nav-number">3.2.</span> <span class="nav-text">创建machine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">3.3.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -403,7 +415,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -426,13 +438,19 @@
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
 <script src="/js/schemes/muse.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
 
+
+  <script defer src="/lib/three/three.min.js"></script>
 
 
   

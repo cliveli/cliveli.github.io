@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 3.9.0">
+<meta name="generator" content="Hexo 7.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
@@ -19,21 +19,32 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"clive.li","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"clive.li","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
-
-  <meta name="description" content="Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator. 1234567891011121314@echo offSET st3Path=C:\Program Files\Sublime">
-<meta name="keywords" content="Windows,Sublime">
+<!-- Hotjar Tracking Code for https://cliveli.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2278629,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  <meta name="description" content="Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator. 1234567891011121314@echo offSET st3Path&#x3D;C:\Program Files\Sublime">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Add Sublime Text 3 to the Windows Right click menu">
 <meta property="og:url" content="https://clive.li/2016/12/09/2016-12-09-Add_Sublime_text_to_click_menu/index.html">
 <meta property="og:site_name" content="Clive.LI">
-<meta property="og:description" content="Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator. 1234567891011121314@echo offSET st3Path=C:\Program Files\Sublime">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-04-05T09:52:51.393Z">
+<meta property="og:description" content="Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator. 1234567891011121314@echo offSET st3Path&#x3D;C:\Program Files\Sublime">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2016-12-08T13:00:00.000Z">
+<meta property="article:modified_time" content="2024-12-27T12:11:33.735Z">
+<meta property="article:author" content="Clive Li">
+<meta property="article:tag" content="Windows">
+<meta property="article:tag" content="Sublime">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Add Sublime Text 3 to the Windows Right click menu">
-<meta name="twitter:description" content="Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator. 1234567891011121314@echo offSET st3Path=C:\Program Files\Sublime">
 
 <link rel="canonical" href="https://clive.li/2016/12/09/2016-12-09-Add_Sublime_text_to_click_menu/">
 
@@ -79,10 +90,11 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="Clive.LI" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+<body itemscope itemtype="http://schema.org/WebPage" data-hj-suppress>
+  <div class="container">
     <div class="headband"></div>
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -199,7 +211,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-05 19:52:51" itemprop="dateModified" datetime="2020-04-05T19:52:51+10:00">2020-04-05</time>
+                <time title="Modified: 2024-12-27 23:11:33" itemprop="dateModified" datetime="2024-12-27T23:11:33+11:00">2024-12-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -237,8 +249,7 @@
 
       
         <p>Save following code as a bat file (change the sublime_text.exe path if you installed it to another location), run it as Administrator.</p>
-<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">SET</span> st3Path=C:\Program Files\Sublime Text <span class="number">3</span>\sublime_text.exe</span><br><span class="line"> </span><br><span class="line"><span class="comment">rem add it for all file types</span></span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>"         /t REG_SZ /v "" /d "Open with Sublime Text <span class="number">3</span>"   /f</span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>"         /t REG_EXPAND_SZ /v "Icon" /d "<span class="variable">%st3Path%</span>,<span class="number">0</span>" /f</span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>\command" /t REG_SZ /v "" /d "<span class="variable">%st3Path%</span> \"<span class="variable">%%1</span>\"" /f</span><br><span class="line"> </span><br><span class="line"><span class="comment">rem add it for folders</span></span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>"         /t REG_SZ /v "" /d "Open with Sublime Text <span class="number">3</span>"   /f</span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>"         /t REG_EXPAND_SZ /v "Icon" /d "<span class="variable">%st3Path%</span>,<span class="number">0</span>" /f</span><br><span class="line">@reg add "HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>\command" /t REG_SZ /v "" /d "<span class="variable">%st3Path%</span> \"<span class="variable">%%1</span>\"" /f</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">SET</span> st3Path=C:\Program Files\Sublime Text <span class="number">3</span>\sublime_text.exe</span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">rem add it for all file types</span></span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>&quot;         /t REG_SZ /v &quot;&quot; /d &quot;Open with Sublime Text <span class="number">3</span>&quot;   /f</span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>&quot;         /t REG_EXPAND_SZ /v &quot;Icon&quot; /d &quot;<span class="variable">%st3Path%</span>,<span class="number">0</span>&quot; /f</span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\*\shell\Open with Sublime Text <span class="number">3</span>\command&quot; /t REG_SZ /v &quot;&quot; /d &quot;<span class="variable">%st3Path%</span> \&quot;<span class="variable">%%1</span>\&quot;&quot; /f</span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">rem add it for folders</span></span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>&quot;         /t REG_SZ /v &quot;&quot; /d &quot;Open with Sublime Text <span class="number">3</span>&quot;   /f</span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>&quot;         /t REG_EXPAND_SZ /v &quot;Icon&quot; /d &quot;<span class="variable">%st3Path%</span>,<span class="number">0</span>&quot; /f</span><br><span class="line">@reg add &quot;HKEY_CLASSES_ROOT\Folder\shell\Open with Sublime Text <span class="number">3</span>\command&quot; /t REG_SZ /v &quot;&quot; /d &quot;<span class="variable">%st3Path%</span> \&quot;<span class="variable">%%1</span>\&quot;&quot; /f</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -383,7 +394,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -406,13 +417,19 @@
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
 <script src="/js/schemes/muse.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
 
+
+  <script defer src="/lib/three/three.min.js"></script>
 
 
   
